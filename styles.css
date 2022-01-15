@@ -8,7 +8,8 @@ body{
     flex-direction: column;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #2e2c2c;
+    font-size: 18px;
+    background-color: #1f1e1e;
 }
 a{
     text-decoration: none;
@@ -19,16 +20,15 @@ ul{
 }
 .content{
     display: flex;
-    width: 75vw;
-    padding-left: 300px;
-    padding-right: 300px;
+    width: 1450px;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 .content .container{
     display: flex;
-    width: 55vw;
+    width: 1000px;
 }
+
 .one{
     flex-direction: column;
     align-items: center;
@@ -36,12 +36,11 @@ ul{
     color: white;
     padding-top:0;
 }
-.one .container{
-    margin-bottom: 100px;
-}
 .one .header{
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 100px;
 }
 .one .header .links{
     display: flex;
@@ -49,35 +48,119 @@ ul{
 }
 .logo{
     font-weight:900;
-    font-size: 20px;
+    font-size: 24px;
 }
-.one .container .sub.container{
+.one .main{
+    gap: 80px;
+    padding: 50px 0;
+}
+.sub.container{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1;
+    margin-bottom: 50px;
+}
+.sub.container h1{
+    font-size: 45px;
+    font-weight: 900;
+}
+.button{
+    padding: 6px 32px;
+    background-color: #3882f6;
+    border-radius: 8px;
+    border: none;
+}
+.button a{
+    font-weight: 900;
+    font-size: 18px;
 }
 .one .container img{
-    width: 600px;
-    height: 200px;
-    background-color: gray;
+    width: 520px;
+    height: 235px;
+    background-color: rgb(114, 116, 133);
+    text-align: center;
+    line-height: 220px;
 }
+
 .two{
     flex-direction: column;
     align-items: center;
     background-color: white;
 }
+.two h2{
+    font-size: 32px;
+    font-weight: 900;
+    color: #1f2937;
+}
+.two .container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px;
+}
+.card img{
+    width: 170px;
+    height: 170px;
+    border: 4px solid #3882f6;
+    border-radius: 20px;
+}
+.card p{
+    text-align: center;
+    font-size: 17px;
+    width: 170px;
+}
+
 .three{
     flex-direction: column;
     align-items: center;
-    background-color: #bbbbbb;
+    padding: 100px 0;
+    background-color: #e5e7eb;
 }
+.three .container{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    gap: 20px;
+}
+.p-one{
+    font-size: 36px;
+    font-weight:100;
+    font-style: italic;
+    line-height: 1.2;
+}
+.p-two{
+    font-size: 24px;
+    font-weight: 900;
+    align-self: flex-end;
+}
+
 .four{
     justify-content: center;
     align-items: center;
     background-color: white;
-    /* color: white; */
+    padding: 100px 0;
 }
+.four .container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #3882f6;
+    border-radius: 10px;
+    color: white;
+    padding: 50px 100px;
+}
+.four .button{
+    border: 2px solid white;
+}
+
 .five{
     justify-content: center;
     align-items: center;
     background-color: #1f2937;
+    padding: 35px 0;
+}
+.five .container{
+    justify-content: center;
+    color: white;
 }
